@@ -1,5 +1,5 @@
 # sign-up_form_top
-Sign-up Form | HTML and CSS Intermediate | Full Stack JavaScript (Getting Hired, NodeJS and MongoDB, React, HTML and CSS Advanced, JavaScript, HTML and CSS Intermediate) | 01/02/29 | The Odin Project | 2024
+Sign-up Form | HTML and CSS Intermediate | Full Stack JavaScript (Getting Hired, NodeJS and MongoDB, React, HTML and CSS Advanced, JavaScript, HTML and CSS Intermediate) | 01/02 (01/29) | The Odin Project | 2024
 
 Step 1: Set up and planning
 	1. Set up your git repository (refer to past projects if you need a refresher).
