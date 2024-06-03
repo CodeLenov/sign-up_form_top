@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Norse Bold';
+	src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+	margin: 0;
+	display: flex;
+	font-family: 'Norse Bold';
+}
+
+img[src="./images/form.jpg"] {
+	height: 100vh;
+	width: auto;
+}
+
+img[src="./images/odin-logo.png"] {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 20vh;
+	width: auto;
+}
+
+form {
+	margin: auto;
+}
+
+form fieldset {
+	display: flex;
+	gap: 10em;
+	padding: 1em 0;
+	border: none;
+}
+
+form fieldset div { /* This effect is possibility to do with HTML (adding <div> or <p>, but the project is for CSS Flex skills */
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	margin-top: 2em;
+	border-radius: 0.5em;
+	height: 3em;
+	font-weight: bold;
+	font-family: 'Norse Bold';
+}
