@@ -51,6 +51,14 @@ form fieldset div { /* This effect is possibility to do with HTML (adding <div> 
 	flex-direction: column;
 }
 
+input:user-invalid {
+	border-color: red;
+}
+
+input:user-valid {
+	border-color: blue;
+}
+
 button {
 	margin: 2em 0 2em 0;
 	border-radius: 0.5em;
