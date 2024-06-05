@@ -1,7 +1,7 @@
 /*
 1. <body>
-2. .logo
-3. .account
+2. <section class="logo">
+3. <section class="account">
 4. <input> validation
 5. @media query
 */
@@ -22,7 +22,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------- */
-/* !!! 2. .logo !!! */
+/* !!! 2. <section class="logo"> !!! */
 
 img[src="./images/form.jpg"] {
 	height: 100vh;
@@ -50,7 +50,7 @@ img[src="./images/odin-logo.png"] {
 }
 
 /* ---------------------------------------------------------------------- */
-/* !!! 3. .account !!! */
+/* !!! 3. <section class="account"> !!! */
 
 .account {
 	display: flex;
