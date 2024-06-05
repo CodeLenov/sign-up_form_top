@@ -1,3 +1,14 @@
+/*
+1. <body>
+2. .logo
+3. .account
+4. <input> validation
+5. @media query
+*/
+
+/* ---------------------------------------------------------------------- */
+/* !!! 1. <body> !!! */
+
 @font-face {
 	font-family: 'Norse Bold';
 	src: url(./fonts/Norse-Bold.otf);
@@ -10,12 +21,15 @@ body {
 	letter-spacing: 0.1em;
 }
 
+/* ---------------------------------------------------------------------- */
+/* !!! 2. .logo !!! */
+
 img[src="./images/form.jpg"] {
 	height: 100vh;
 	width: 30vw;
 }
 
-div div {
+.logo div {
 	position: absolute;
 	top: 20vh;
 	display: flex;
@@ -25,14 +39,23 @@ div div {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-div div img {
+img[src="./images/odin-logo.png"] {
 	height: 10vh;
 	width: auto;
 }
 
-div div span {
+.logo div span {
 	font-size: 10vh;
 	color: white;
+}
+
+/* ---------------------------------------------------------------------- */
+/* !!! 3. .account !!! */
+
+.account {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
 }
 
 form {
@@ -41,22 +64,16 @@ form {
 
 form fieldset {
 	display: flex;
-	gap: 10em;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding: 1em 0;
+	gap: 10em;
 	border: none;
 }
 
 form fieldset div { /* This effect is possibility to do with HTML (adding <div> or <p>, but the project is for CSS Flex skills */
 	display: flex;
 	flex-direction: column;
-}
-
-input:user-invalid {
-	border-color: red;
-}
-
-input:user-valid {
-	border-color: blue;
 }
 
 button {
@@ -74,4 +91,39 @@ button {
 
 form p:last-child {
 	font-size: small;
+}
+
+/* ---------------------------------------------------------------------- */
+/* !!! 4. <input> validation !!! */
+
+input:user-invalid {
+	border-color: red;
+}
+
+input:user-valid {
+	border-color: blue;
+}
+
+/* ---------------------------------------------------------------------- */
+/* !!! 5. @media query !!! */
+
+@media all and (max-width: 1000px) {
+	form fieldset {
+		gap: 5em;
+	}
+}
+
+@media all and (max-width: 800px) {
+	form fieldset {
+		gap: 2em;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.account {
+		text-align: center;
+	}
+	form fieldset {
+		gap: 0.75em;
+	}
 }
