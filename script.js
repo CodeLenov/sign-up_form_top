@@ -45,6 +45,7 @@ phoneNumber.addEventListener('input', (event) => {
 	if (phoneNumber.validity.valueMissing) {
 		phoneNumber.setCustomValidity("Please, enter a Phone Number");
 		phoneNumber.reportValidity();
+		
 	} else if (phoneNumber.validity.patternMismatch) {
 		phoneNumber.setCustomValidity("Phone Number needs to be in International Standart, without '+'");
 		phoneNumber.reportValidity();
@@ -76,7 +77,3 @@ confirmPassword.addEventListener('input', (event) => {
 		confirmPassword.setCustomValidity("");
 	}
 });
-
-
-// do css for :valid :invalid and ?
-// add css for error message from mdn?
